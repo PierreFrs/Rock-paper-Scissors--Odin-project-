@@ -53,7 +53,9 @@ const winners = [];
     function checkWinner(choiceP, choiceC) {
       if (choiceP === choiceC) {
         return 'Tie';
-      } else if ((choiceP === 'rock' && choiceC === 'scissors') || (choiceP === 'paper' && choiceC === 'rock') || (choiceP === 'scissors' && choiceC === 'paper')) {
+      } else if ((choiceP === 'rock' && choiceC === 'scissors') || 
+                  (choiceP === 'paper' && choiceC === 'rock') || 
+                  (choiceP === 'scissors' && choiceC === 'paper')) {
         return 'Player wins!';
       } else {
         return 'Computer wins...';
